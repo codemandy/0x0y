@@ -3,13 +3,28 @@ title: Home
 layout: layouts/base.njk
 ---
 
-<div class="space-y-8">
-
-  <div>
-    <p>This is the project's home page. There is a little styling for demonstration purposes only.</p>
-    <p>The navigation might as well be a sidebar, or a floating menu. This template provides the structure, make it yours ✌️</p>
+<div class="container mt-8">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 push-left">
+      <div class=" flex justify-start text-xs">DESCRIPTION</div>
+      <div class=" flex justify-start text-xs">0X0Y IS A COPENHAGEN BASED WEB/DESIGN DEVELOPMENT STUDIO.</div>
+    </div>
+    <div class="row-spacer"></div>
+    <div class="grid grid-cols-1 m:grid-cols-2 gap-4 m:gap-8 push-left">
+      <div class="flex justify-start text-xs">CONTACT
+      </div>
+      <div class="flex justify-start text-xs">HELLO@0X0Y-STUDIO.com</div>
+    </div>
+    <div class="row-spacer"></div>
+    <div class="row-spacer"></div>
   </div>
+  <div class="flex h-screen">
+    <div class="w-1/2 h-full flex flex-col bg-gray-400 ">
+      <div class="container flex block mx-auto mt-10  max-w-2xl">
+        <img src="/img/2.png" class="w-500 bw" alt="frontpage image" >
+      </div>
 
-
-  <a href="https://github.com/tomreinert/minimal-11ty-tailwind-starter" class="inline-block uppercase rounded bg-blue-600 hover:bg-blue-700 px-4 py-2 text-white text-sm">Download on github</a>
+    </div>
+    <div class="w-1/2"></div>
+  </div>
 </div>

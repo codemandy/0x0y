@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: monospace, system-ui, sans-serif;
+  }
+}
+
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+
+.push-left {
+  margin-left: 50%;
+}
+
+.row-spacer {
+  height: 24px;
+}
+
+.bw {
+  filter: grayscale(100%);
+}
