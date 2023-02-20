@@ -5,9 +5,8 @@
      <link rel="stylesheet" type="text/css" href="/assets/main.css" />
   </head>
   <body>
-    {% include "../components/navigation.njk" %}
-    <main class="p-12">
-      <h1 class="text-3xl mb-8">{{title}}</h1>
+    <main class="main">
+      {% include "../components/navigation.njk" %}
       {{ content | safe }}
     </main>
     <script src="/assets/main.js"></script>

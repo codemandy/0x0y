@@ -6,11 +6,46 @@ eleventyNavigation:
   key: Contact
   order: 3
 ---
-
-<ul>
-     {% for item in contact.items %}
-     <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-     {% endfor %}
-</ul>
-
-<p class="mt-4">☝️ This page gets its content from <code>src/_data/contact.json</code></p>
+<div class="columns">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 push-left">
+      <div class="flex justify-start text-xs">ADDRESSE
+      </div>
+      <div class="flex justify-start text-xs">VERMLANDSGADE 61, 2300 COPENHAGEN</div>
+    </div>
+    <div class="row-spacer"></div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 push-left">
+      <div class="flex justify-start text-xs">CONTACT
+      </div>
+      <div class="flex justify-start text-xs">HELLO@0X0Y-STUDIO.com</div>
+    </div>
+    <div class="row-spacer"></div>
+    <div class="row-spacer"></div>
+    <div class="black-p w-screen h-screen">
+        <div class="flex h-1/2">
+    <div class="w-1/2 flex flex-col ">
+      <div class="container  mx-auto mt-12 mb-12  max-w-2xl">
+        <h1 class=" w-fit mb-2 text-xs project-h contact-text">NIKOLA LAMBUROV</h1>
+        <img src="/img/11.png" class="w-500 bw" alt="frontpage image" >
+      </div>
+      <div class="container  mx-auto mt-12 mb-12  max-w-2xl">
+        <h1 class=" w-fit mb-2 text-xs project-h contact-text">TILOTONI</h1>
+        <img src="/img/12.png" class="w-500 bw" alt="frontpage image" >
+      </div>
+      <div class="container  mx-auto mt-12 mb-12  max-w-2xl">
+        <h1 class=" w-fit mb-2 text-xs project-h contact-text">EMANCIPATIONSFRUGTEN</h1>
+        <img src="/img/2.png" class="w-500 bw" alt="frontpage image" >
+      </div>
+      <div class="container mx-auto mt-12 mb-12  max-w-2xl">
+        <h1 class=" w-fit mb-2 text-xs project-h contact-text">BAGHAVENFILM</h1>
+        <img src="/img/3.png" class="w-500 bw" alt="frontpage image" >
+      </div>
+      <div class="container mx-auto mt-12 mb-12  max-w-2xl">
+        <h1 class=" w-fit mb-2 text-xs project-h contact-text">NAYA MOLL</h1>
+        <img src="/img/4.png" class="w-500 bw" alt="frontpage image" >
+      </div>
+    </div>
+    <div class="w-1/2">
+    </div>
+  </div>
+</div>
