@@ -10,7 +10,7 @@
             <a
              href="{{ entry.url }}"
              class="text-xs p-1 uppercase rounded
-             {{'bg-black text-white' if entry.url in page.url
+             {{'' if entry.url in page.url
              else 'text-gray-700 hover:text-gray-900'}}">
              {{ entry.title }}
            </a>
