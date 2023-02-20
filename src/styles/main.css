@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 @layer base {
   html {
@@ -9,6 +14,27 @@
   }
 }
 
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background: var(--colour-bg);
+  transition: background-color 0.3s var(--easing), color 0.3s var(--easing);
+  z-index: 50;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 12px;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 12px;
+}
 
 .columns {
   display: flex;
@@ -24,7 +50,48 @@
 .row-spacer {
   height: 24px;
 }
+.row-spacer2 {
+  height: 200px;
+}
 
-.bw {
+/* .bw {
   filter: grayscale(100%);
+} */
+
+.bg-color {
+  /* bg-gray-400 */
+}
+
+.black-p {
+  position: fixed;
+  bottom: 0;
+  top: 325px;
+  left: 0;
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.orangedot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.81);
+}
+
+.project-h {
+  color: rgb(0, 0, 0);
+}
+
+/* .line {
+  border-left: 1.4px dotted rgb(255, 255, 255);
+            height: 500px;
+            position: absolute;
+            left: 40%;
+            top: 6%;
+
+} */
+
+.contact-text {
+  background-color: white;
 }

@@ -1,18 +1,22 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3">
-  <a href="/" class="text-xs uppercase tracking-tight">0x0y</a>
+<div class="header">
+  <div class="container">
+    <nav class="flex items-center justify-between flex-wrap py-3">
+      <a href="/work" class="text-xs uppercase tracking-tight">0x0y</a>
 
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-    {% for entry in navPages %}
-      <li class="inline">
-        <a
-         href="{{ entry.url }}"
-         class="text-xs uppercase py-1 px-2 rounded inline-block
-         {{'bg-black text-white' if entry.url in page.url
-         else 'text-gray-700 hover:text-gray-900'}}">
-         {{ entry.title }}
-       </a>
-      </li>
-    {% endfor %}
- </ul>
-</nav>
+      {% set navPages = collections.all | eleventyNavigation %}
+      <ul>
+        {% for entry in navPages %}
+          <li class="inline">
+            <a
+             href="{{ entry.url }}"
+             class="text-xs p-1 uppercase rounded
+             {{'bg-black text-white' if entry.url in page.url
+             else 'text-gray-700 hover:text-gray-900'}}">
+             {{ entry.title }}
+           </a>
+          </li>
+        {% endfor %}
+     </ul>
+    </nav>
+  </div>
+</div>
