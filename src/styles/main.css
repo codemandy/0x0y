@@ -54,9 +54,9 @@ main {
   height: 200px;
 }
 
-/* .bw {
+.bw-2 {
   filter: grayscale(100%);
-} */
+}
 
 .bg-color {
   /* bg-gray-400 */
@@ -83,15 +83,11 @@ main {
   color: rgb(0, 0, 0);
 }
 
-/* .line {
-  border-left: 1.4px dotted rgb(255, 255, 255);
-            height: 500px;
-            position: absolute;
-            left: 40%;
-            top: 6%;
-
-} */
 
 .contact-text {
   background-color: white;
+}
+
+.contact-logo {
+  width: 50%;
 }
