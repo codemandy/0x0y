@@ -1,5 +1,4 @@
-<div class="header">
-  <div class="container">
+<div class="header w-full px-3 sm:pr-[40px]">
     <nav class="flex items-center justify-between flex-wrap py-3">
       <a href="/" class="text-xs uppercase tracking-tight">0x0y</a>
 
@@ -10,6 +9,7 @@
             <a
              href="{{ entry.url }}"
              class="text-xs p-1 uppercase rounded
+
              {{'' if entry.url in page.url
              else 'text-gray-700 hover:text-gray-900'}}">
              {{ entry.title }}
@@ -18,5 +18,4 @@
         {% endfor %}
      </ul>
     </nav>
-  </div>
 </div>
