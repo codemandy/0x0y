@@ -10,7 +10,7 @@
 
 @layer base {
   html {
-    font-family: monospace, system-ui, sans-serif;
+    font-family: inter, Helvetica, sans-serif, system-ui, sans-serif;
   }
 }
 
@@ -32,11 +32,9 @@
   filter: grayscale(100%);
 }
 
-
-.project-h {
+/* .project-h {
   color: rgb(0, 0, 0);
-}
-
+} */
 
 .contact-text {
   background-color: white;
@@ -50,16 +48,14 @@
   .push-left {
     margin-left: 50%;
   }
-
 }
-
 
 .black-p {
   position: fixed;
   bottom: 0;
   top: 325px;
   left: 0;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   padding: 0;
   margin: 0;
 }
