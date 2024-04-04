@@ -10,52 +10,67 @@
 
 @layer base {
   html {
-    font-family: inter, Helvetica, sans-serif, system-ui, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif, system-ui,
+      sans-serif;
+
+    color: white;
+
+    .white-line {
+      border-bottom: 0.5px solid white; /* Adjust the width and style as needed */
+    }
+
+    .vertical-line-1 {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 70%; /* Adjust the position of the vertical line */
+      width: 1px; /* Adjust the width of the vertical line */
+      background-color: rgb(
+        255,
+        255,
+        255
+      ); /* Adjust the color of the vertical line */
+      z-index: 999; /* Ensure the vertical line is above other content */
+    }
+    .vertical-line-2 {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 71%; /* Adjust the position of the vertical line */
+      width: 1px; /* Adjust the width of the vertical line */
+      background-color: rgb(
+        255,
+        255,
+        255
+      ); /* Adjust the color of the vertical line */
+      z-index: 999; /* Ensure the vertical line is above other content */
+    }
+
+    @media (min-width: 1280px) {
+      .container {
+        max-width: none; /* Remove the max-width restriction */
+      }
+    }
   }
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 50;
 }
 
-.row-spacer {
-  height: 24px;
-}
-.row-spacer2 {
-  height: 200px;
-}
-
-.bw-2 {
-  filter: grayscale(100%);
+.headline {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/* .project-h {
-  color: rgb(0, 0, 0);
-} */
-
-.contact-text {
-  background-color: white;
+.spacer {
+  height: 20px;
 }
 
-.contact-logo {
-  width: 50%;
-}
-
-@media screen(sm) {
-  .push-left {
-    margin-left: 50%;
-  }
-}
-
-.black-p {
-  position: fixed;
-  bottom: 0;
-  top: 325px;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  padding: 0;
-  margin: 0;
+.mail {
+  font-size: 14px;
+  padding-left: 10px;
 }
